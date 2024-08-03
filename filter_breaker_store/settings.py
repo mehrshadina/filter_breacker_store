@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-05j915niber=!up#q!yw2j$*xc$&yhhhe=5d%2^knsmr9yf5fi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cloud.dorebot.ir']
 
 
 # Application definition
