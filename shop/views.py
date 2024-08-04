@@ -8,11 +8,11 @@ from .models import Product, Order, UserProfile
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, 'shop/product_list.html', {'products': products})
+    return render(request, 'product_list.html', {'products': products})
 
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
-    return render(request, 'shop/product_detail.html', {'product': product})
+    return render(request, 'product_detail.html', {'product': product})
 
 @csrf_exempt
 def telegram_webhook(request):
